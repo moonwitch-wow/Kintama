@@ -1,14 +1,15 @@
 
 local myname, ns = ...
 
-ns.NUM_REAGENT_SLOTS = 14
+ns.NUM_REAGENT_SLOTS = 18 -- default = 14
 
 
 local bagframe, bankframe, reagentframe
 function ns.OnLoad()
 	bagframe = ns.MakeContainerFrame("KintamaFrame", UIParent)
 	bagframe:SetSize(400, 236)
-	bagframe:SetPoint("BOTTOMRIGHT", UIParent, -15, 100)
+	bagframe:SetScale(.95) -- temp stopgap to make it all smaller.
+	bagframe:SetPoint("BOTTOMRIGHT", UIParent, -15, 30) -- original position
 
 	bankframe = ns.MakeContainerFrame("KintamaBankFrame", bagframe)
 	bankframe:SetSize(400, 342)
