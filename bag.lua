@@ -26,7 +26,7 @@ local function Update(self)
 		return
 	end
 
-	self:SetWidth(num_slots * 39 + 42)
+	self:SetWidth(num_slots * 39 + 42) -- sets the width of the frame.
 
 	local f = self.slots[num_slots] -- Touch to ensure slot frames exist
 
@@ -46,7 +46,7 @@ local function Update(self)
 		ContainerFrame_Update(self)
 		if self.bagslot then self.bagslot:SetIgnoreIcon() end
 	end
-	
+
 	self:UpdateSlots()
 end
 
