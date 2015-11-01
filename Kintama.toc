@@ -10,6 +10,7 @@ externals\events.lua
 externals\tooltip_scanner.lua
 externals\bound.lua
 
+config.lua
 main.lua
 container.lua
 bagslot.lua
